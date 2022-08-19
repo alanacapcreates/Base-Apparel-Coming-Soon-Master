@@ -87,7 +87,7 @@ input{
 input::placeholder{
     color: var(--Desaturated-Red);
 }
-.user-input{
+/* .user-input{
     width: 100%;
     height: fit-content;
     display: flex;
@@ -106,7 +106,32 @@ input::placeholder{
     color: #ffffff;
     font-size: 24px;
     cursor: pointer;
+} */
+
+.search-bar {
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  border: none;
+  position: relative;
 }
+
+#searchBarInput {
+  background: transparent;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.search-bar-icon {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 45px;
+  border-radius: 8px;
+}
+
 #desktop{
     display: none;
 }

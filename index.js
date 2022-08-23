@@ -27,19 +27,37 @@ function validateDesktop(e){
   validIcon.style.display= 'none';   
 
 
-  if(!userInputDesktop.value){
+  // if(!userInputDesktop.value){
+  //   validIcon.style.display= 'none';
+  //   validMsg.style.display = 'none';
+  //   errorMsg.style.display = 'block';
+  //   errorIcon.style.display = 'block';
+
+  // }
+  // else if(userInputDesktop.value){
+  //   if(userInputDesktop.value.includes("@")){
+  //     errorMsg.style.display = 'none';
+  //     errorIcon.style.display = 'none';
+  //     validMsg.style.display = 'block';
+  //     validIcon.style.display= 'block';
+
+  //   }
+  // }
+
+  if(userInputDesktop.value){
+    if(!userInputDesktop.value.includes("@")){
     validIcon.style.display= 'none';
     validMsg.style.display = 'none';
     errorMsg.style.display = 'block';
     errorIcon.style.display = 'block';
-
+    }
   }
-  else if(userInputDesktop.value){
+  if(userInputDesktop.value.includes("@")){
     errorMsg.style.display = 'none';
     errorIcon.style.display = 'none';
     validMsg.style.display = 'block';
     validIcon.style.display= 'block';
-  }
+    }
 }
 
 function validateMobile(e){
@@ -48,18 +66,26 @@ function validateMobile(e){
   validMsgMobile.style.display = 'none';
   validIconMobile.style.display= 'none';
 
-  if(!userInputMobile.value){
+  if(userInputMobile.value){
+    if(!userInputMobile.value.includes("@")){
     validIconMobile.style.display= 'none';
     validMsgMobile.style.display = 'none';
     errorMsgMobile.style.display = 'block';
     errorIconMobile.style.display = 'block';
-
+    }
   }
-  else if(userInputMobile.value){
+  if(userInputMobile.value.includes("@")){
     errorMsgMobile.style.display = 'none';
     errorIconMobile.style.display = 'none';
     validMsgMobile.style.display = 'block';
     validIconMobile.style.display= 'block';
-  }
-  
+    }
+  // else if(userInputMobile.value){
+  //   if(userInputMobile.value.includes("@")){
+  //   errorMsgMobile.style.display = 'none';
+  //   errorIconMobile.style.display = 'none';
+  //   validMsgMobile.style.display = 'block';
+  //   validIconMobile.style.display= 'block';
+  //   }
+  // }
 }

@@ -58,34 +58,3 @@ function validateMobile(e){
   }
   
 }
-
-// // // set up listener on submit
-// // gather elements  
-// const forms = document.querySelectorAll('form');
-// const errorMsg = document.querySelector('#error-msg');
-// const errorIcon = document.querySelector('#error-icon');
-// const validIcon = document.querySelector('#valid-icon')
-
-// // set up listener on submit
-// if(forms && errorMsg && errorIcon && validIcon) {
-//   forms.forEach(form =>{
-//     form.addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     const data = new FormData(e.target);
-//     const {email} = data;
-//     console.log(data)
-//     // do validation
-//     if(!input.value) {
-//       errorMsg.style.display = 'block'
-//       errorIcon.style.display = 'block'
-//       validIcon.style.display= 'none'
-//     } else {
-//       validIcon.style.display= 'block'
-//       errorMsg.style.display = 'none'
-//       errorIcon.style.display = 'none'
-//     }
-//   })
-//   })
-    
-// }
-

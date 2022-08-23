@@ -94,21 +94,24 @@ input::placeholder{
     outline: 1px solid var(--Soft-Red);
     /* color: aqua; */
 }
-#error-msg{
+#error-msg,
+#error-msg-mobile{
     display: none;
     color: var(--Soft-Red);
     font-size: .8em;
     margin:.5em 0 0 2.5em;
     letter-spacing: normal;
 }
-#valid-msg{
+#valid-msg,
+#valid-msg-mobile{
     display: none;
     color:darkolivegreen;
     font-size: .8em;
     margin:.5em 0 0 2.5em;
     letter-spacing: normal;
 }
-#error-icon {
+#error-icon,
+#error-icon-mobile {
     position: absolute;
     /* display: none; */
     justify-content: center;
@@ -119,9 +122,10 @@ input::placeholder{
     color: var(--Soft-Red);
     z-index: -3;
 }
-#valid-icon {
+#valid-icon,
+#valid-icon-mobile {
     position: absolute;
-    /* display: none; */
+    display: none;
     justify-content: center;
     align-items: center;
     right: 16%;

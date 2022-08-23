@@ -41,7 +41,12 @@ function validateDesktop(e){
     validIcon.style.display= 'block';
   }
 }
+
 function validateMobile(e){
+  errorIconMobile.style.display='none';
+  errorMsgMobile.style.display = 'none';
+  validMsgMobile.style.display = 'none';
+  validIconMobile.style.display= 'none';
 
   if(!userInputMobile.value){
     validIconMobile.style.display= 'none';

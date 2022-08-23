@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="./styles.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
+  <script src="https://kit.fontawesome.com/acc3c14e55.js" crossorigin="anonymous"></script>
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -29,12 +31,23 @@
       <h1><span class="thin">We're</span><br><span class="thick">coming<br>soon</span></h1>
     
       <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-      <div class="user-input">
-        <input type="text" placeholder="Email Address"/>
-        <button id="submit">></button>
-      </div>
       
+        <div class="search-bar">
+            <input autocomplete="off" type="email" placeholder="Email Address" id="searchBarInputMobile"/>
+          
+            <button title="Submit" type="submit" onclick="validateMobile()" class="search-bar-icon"><i class="fa-solid fa-angle-right"></i></button>
+            
+        </div>
+        <p id="error-msg">
+          Please provide a valid email
+        </p>
+        <p id="valid-msg">
+          Thanks for subscribing!
+        </p>
     </div>
+
+
+
   </main>
 
 <!-- DESKTOP DESIGN -->
@@ -51,20 +64,30 @@
       
         <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
+        
+          <div class="search-bar">
+              <input name="email" autocomplete="off" type="email" placeholder="Email Address" id="searchBarInputDesktop"/>
+            
+              <button title="Submit" type="submit" onclick="validateDesktop()" class="search-bar-icon"><i class="fa-solid fa-angle-right"></i></button>
 
-<!--         <div class="user-input">
-          <input type="text" placeholder="Email Address"/>
-        </div>
-        <button type = "submit" id="submit">></button> -->
 
- 
-       <div class="search-bar">
-      <input type="text" placeholder="Search User" id="searchBarInput"/>
-      <button class="search-bar-icon">></button>
-      </div>
+              <i id="valid-icon" class="fa-solid fa-circle-check"></i>
+
+              <i id="error-icon" class="fa-solid fa-circle-exclamation"></i>
+              
+            </div>
+            <p id="error-msg">
+              Please provide a valid email
+            </p>
+            <p id="valid-msg">
+              Thanks for subscribing!
+            </p>
+          
+          
         
       </div>
     </div>
+
     <!-- right side -->
     <div class="right">
       <img id="hero-img" src="./images/hero-desktop.jpg" alt="model wearing coral shirt">
@@ -76,5 +99,8 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+<script src="./index.js"></script>
+
+
 </body>
 </html>

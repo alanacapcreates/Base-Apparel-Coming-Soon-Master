@@ -55,13 +55,13 @@ h1{
     color: var(--Desaturated-Red);
     font-weight: 300;
 }
-#logo{
+.logo{
     display: block;
     margin-left: 1em;
     margin-bottom: 1em;
     transform: scale(.8);
 }
-#hero-img{
+.hero-img{
     width: 100%;
     background-size: cover;
 }

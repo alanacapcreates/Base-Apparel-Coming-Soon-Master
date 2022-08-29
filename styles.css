@@ -29,7 +29,7 @@ body{
 }
 nav{
     width: 100%;
-    margin: 1em
+    margin: 1.5em
 }
 footer{
     margin-top: 1em;
@@ -39,11 +39,8 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: 100vw; */
     height: 100%;
-    /* background-image: var(--gradientWhite); */
     text-align: center;
-    /* padding-bottom: 3em; */
 }
 h1{
     text-transform: uppercase;
@@ -52,6 +49,7 @@ h1{
     margin-bottom: .5em;
     color: var(--Dark-Grayish-Red);
     font-size: 3rem;
+    line-height: 1.1;
 }
 .thin{
     color: var(--Desaturated-Red);
@@ -77,7 +75,7 @@ h1{
 }
 .sign-up p {
     letter-spacing: 1px;
-    line-height: 1.4;
+    line-height: 1.5;
     color: var(--Desaturated-Red);
 }
 form{
@@ -192,9 +190,12 @@ input::placeholder{
 #desktop{
     display: none;
 }
-@media screen and (min-width:580px) {
+@media screen and (min-width:780px) {
     #desktop{
         display: flex;
+    }
+    nav{
+        width: 70%;
     }
     .container{
         flex-direction: row;
@@ -203,7 +204,11 @@ input::placeholder{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 60%;
+        width: 70%;
+        height: 100%;
+        background: no-repeat url('./images/bg-pattern-desktop.svg');
+
+        background-size: cover;
     }
     .left,
     .right{
@@ -216,7 +221,7 @@ input::placeholder{
     }
     .sign-up{
         margin: 0;
-        width: 80%;
+        max-width: 60%;
         height: 100%;
         text-align: left;
     }
@@ -229,14 +234,9 @@ input::placeholder{
     border: none;
     }
     
-
-    
     .search-bar-icon {
       position: absolute;
       right: 0;
-      /* height: 40px;
-      width: 45px; */
-      /* border-radius: 15px; */
     }
     #mobile{
         display: none;
